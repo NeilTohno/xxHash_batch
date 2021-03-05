@@ -1,6 +1,7 @@
 @echo off
 mkdir "%~dp1move\"
-::mkdir "%~dp1RAR\"
+mkdir "%~dp1or\"
+
 
 :first
 set LIST=
