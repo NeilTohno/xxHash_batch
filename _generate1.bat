@@ -1,9 +1,9 @@
 @echo off 
 
 color 2F
-echo ━━━━━━━━━━━━━━━━━━━━━━━━━━
+echo ━━━━━━━━━━━━━━━━━━
 echo 创建 xxHash 校验码
-echo ━━━━━━━━━━━━━━━━━━━━━━━━━━
+echo ━━━━━━━━━━━━━━━━━━
 echo=
 
 cd /d "%~dp0"
@@ -15,9 +15,9 @@ if "%~1" == "" goto error
 %cd%\_tmp\xxhsum.exe -H2 --tag "%~1" >>"%output%"
 
 
-echo ━━━━━
+echo ━━━━━━━━
 echo 操作成功。
-echo ━━━━━ 
+echo ━━━━━━━━ 
 
 ::timeout /t 1 /nobreak
-echo. & pause
+echo.
